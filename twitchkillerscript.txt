@@ -1,0 +1,22 @@
+// ==UserScript==
+// @name         Twitch Killer Story
+// @namespace    http://tampermonkey.net/
+// @version      2024-08-14
+// @description  removes Twitch Stories from follow page
+// @author       rozodru
+// @match        https://www.twitch.tv/directory/following
+// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant        GM_addStyle
+// @run-at document-end
+// ==/UserScript==
+
+
+var style = document.createElement('style');
+style.type = 'text/css';
+
+
+style.innerHTML = '.lcFJxY{display:none !important;}';
+
+
+
+document.getElementsByTagName('head')[0].appendChild(style);
