@@ -16,7 +16,6 @@ style.type = 'text/css';
 
 
 style.innerHTML = '.lcFJxY{display:none !important;}';
-style.innerHTML = '.hdoiLi{display:none !important;}';
 
 
 
